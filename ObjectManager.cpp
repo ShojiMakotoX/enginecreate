@@ -1,17 +1,15 @@
 #include "ObjectManager.h"
+#include "ObjectBase.h"
+#include <list>
 
-void ObjectManager::Initlaize()
+namespace 
 {
+	//リストを作る
+	std::list<ObjectBase*>* objects;
 }
 
-void ObjectManager::Update()
+void ObjectManager::Push(ObjectBase *obj)
 {
-}
-
-void ObjectManager::Draw()
-{
-}
-
-void ObjectManager::Release()
-{
+	//値をpush_backに入れる
+	objects->push_back(obj);
 }
