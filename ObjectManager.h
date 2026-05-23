@@ -1,6 +1,6 @@
 #pragma once
-#include "ObjectBase.h"
 
+class ObjectBase;
 namespace ObjectManager
 {
 	void Initlaize();//初期化

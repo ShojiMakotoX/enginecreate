@@ -1,6 +1,7 @@
 #include "DxLib.h"
 #include "globals.h"
 #include "input.h"
+#include "ObjectManager.h"
 
 
 namespace
@@ -48,7 +49,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	crrTime = GetNowCount();
 	prevTime = GetNowCount();
 
-	
+	ObjectManager::Initlaize();
 
 	while (true)
 	{
@@ -62,7 +63,9 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 		//‚±‚±‚É‚â‚è‚½‚¢ˆ—‚ğ‘‚­
 
-
+		//XV‚Æ•`‰æ
+		ObjectManager::Update();
+		ObjectManager::Draw();
 
 
 		ScreenFlip();
