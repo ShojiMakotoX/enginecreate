@@ -3,7 +3,7 @@
 
 PlayScene::PlayScene()
 {
-
+	//new Player();
 }
 
 PlayScene::~PlayScene()

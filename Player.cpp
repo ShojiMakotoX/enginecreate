@@ -12,8 +12,13 @@ void Player::Update()
 {
 	if (CheckHitKey(KEY_INPUT_LEFT))
 	{
-
+		pos_.x -= 1.0f;
 	}
+	if (CheckHitKey(KEY_INPUT_RIGHT))
+	{
+		pos_.x += 1.0f;
+	}
+
 }
 
 void Player::Draw()
