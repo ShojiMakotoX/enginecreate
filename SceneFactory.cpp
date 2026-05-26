@@ -1,6 +1,7 @@
 #include "SceneFactory.h"
 #include "BootScene.h"
 #include "TitleScene.h"
+#include "PlayScene.h"
 
 void SceneFactroy::SceneOpen(SCENE_NAME scenename)
 {
@@ -13,6 +14,7 @@ void SceneFactroy::SceneOpen(SCENE_NAME scenename)
 		new TitleScene();
 		break;
 	case SCENE_NAME::PLAY:
+		new PlayScene();
 		break;
 	default:
 		break;
