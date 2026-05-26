@@ -2,6 +2,7 @@
 
 Player::Player()
 {
+	pos_ = VECTOR(100, 100);
 }
 
 Player::~Player()
@@ -23,5 +24,5 @@ void Player::Update()
 
 void Player::Draw()
 {
-	DrawBox(200, 200, 300, 300, GetColor(255, 0, 0), TRUE);
+	DrawBox(pos_.x, pos_.y, pos_.x+100, pos_.y+100, GetColor(255, 0, 0), TRUE);
 }

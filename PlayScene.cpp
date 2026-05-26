@@ -3,7 +3,7 @@
 
 PlayScene::PlayScene()
 {
-	//new Player();
+	new Player();
 }
 
 PlayScene::~PlayScene()
@@ -12,10 +12,13 @@ PlayScene::~PlayScene()
 
 void PlayScene::Update()
 {
-
+	if (CheckHitKey(KEY_INPUT_B))
+	{
+		ObjectManager::SceneSlect(SCENE_NAME::TITLE);
+	}
 }
 
 void PlayScene::Draw()
 {
-	
+	DrawFormatString(100, 100, GetColor(255, 255, 255), "Game", FALSE);
 }

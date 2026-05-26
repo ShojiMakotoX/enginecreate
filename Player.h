@@ -5,6 +5,7 @@
 class Player :
     public ObjectBase
 {
+public:
     Player();
     ~Player();
     void Update()override;

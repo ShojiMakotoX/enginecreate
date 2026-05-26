@@ -19,5 +19,6 @@ void TitleScene::Update()
 
 void TitleScene::Draw()
 {
+	DrawFormatString(100, 100, GetColor(255, 255, 255), "Title", FALSE);
 	DrawFormatString(200, 300, GetColor(255, 255, 255), "Press Space to Start.", FALSE);
 }
