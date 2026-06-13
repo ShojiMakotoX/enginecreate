@@ -19,6 +19,10 @@ void Player::Update()
 	{
 		pos_.x += 1.0f;
 	}
+	if (CheckHitKey(KEY_INPUT_SPACE))
+	{
+		//球を発射する
+	}
 
 }
 

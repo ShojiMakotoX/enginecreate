@@ -1,13 +1,11 @@
 #pragma once
 #include "ObjectBase.h"
-#include <vector>
-
-class Player :
+class Enemy :
     public ObjectBase
 {
 public:
-    Player();
-    ~Player();
+    Enemy();
+    ~Enemy();
     void Update()override;
     void Draw()override;
 private:

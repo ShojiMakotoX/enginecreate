@@ -1,9 +1,11 @@
 #include "PlayScene.h"
 #include "Player.h"
+#include "Enemy.h"
 
 PlayScene::PlayScene()
 {
 	new Player();
+	new Enemy();
 }
 
 PlayScene::~PlayScene()
