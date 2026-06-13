@@ -12,6 +12,7 @@ Stage::~Stage()
 
 void Stage::Update()
 {
+	//スクロールできたら取り入れたいけど…
 }
 
 void Stage::Draw()

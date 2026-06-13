@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "PlayerBullet.h"
 
 Player::Player()
 {
@@ -13,20 +14,20 @@ void Player::Update()
 {
 	if (CheckHitKey(KEY_INPUT_LEFT))
 	{
-		pos_.x -= 1.0f;
+		pos_.x -= 3.0f;
 	}
 	if (CheckHitKey(KEY_INPUT_RIGHT))
 	{
-		pos_.x += 1.0f;
+		pos_.x += 3.0f;
 	}
 	if (CheckHitKey(KEY_INPUT_SPACE))
 	{
-		//球を発射する
+		new PlayerBullet();
 	}
 
 }
 
 void Player::Draw()
 {
-	DrawBox(pos_.x, pos_.y, pos_.x+100, pos_.y+100, GetColor(255, 0, 0), TRUE);
+	DrawBox(pos_.x, pos_.y, pos_.x + 50, pos_.y + 50, GetColor(0, 0, 255), TRUE);
 }
