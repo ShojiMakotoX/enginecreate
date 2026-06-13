@@ -2,7 +2,7 @@
 
 Player::Player()
 {
-	pos_ = VECTOR(100, 100);
+	pos_ = VECTOR(100, 500);
 }
 
 Player::~Player()
