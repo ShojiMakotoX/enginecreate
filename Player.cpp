@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "PlayerBullet.h"
+#include "globals.h"
 
 Player::Player()
 {
@@ -15,10 +16,18 @@ void Player::Update()
 	if (CheckHitKey(KEY_INPUT_LEFT))
 	{
 		pos_.x -= 3.0f;
+		if (pos_.x < WIN_WIDTH)
+		{
+			pos_.x = 0.0f;
+		}
 	}
 	if (CheckHitKey(KEY_INPUT_RIGHT))
 	{
 		pos_.x += 3.0f;
+		if (pos_.x > WIN_WIDTH)
+		{
+			pos_.x = WIN_WIDTH;
+		}
 	}
 	if (CheckHitKey(KEY_INPUT_SPACE))
 	{

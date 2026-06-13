@@ -11,5 +11,6 @@ public:
 private:
     VECTOR pos_;
     VECTOR vel_;
+    int scrollY;
 };
 

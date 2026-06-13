@@ -3,6 +3,7 @@
 #include "Enemy.h"
 #include "Stage.h"
 
+
 PlayScene::PlayScene()
 {
 	new Stage();
@@ -24,5 +25,5 @@ void PlayScene::Update()
 
 void PlayScene::Draw()
 {
-	DrawFormatString(100, 100, GetColor(255, 255, 255), "Game", FALSE);
+	DrawFormatString(100, 100, GetColor(255, 255, 255), "game", TRUE);
 }

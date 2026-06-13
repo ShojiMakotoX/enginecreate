@@ -12,7 +12,8 @@ Stage::~Stage()
 
 void Stage::Update()
 {
-	//スクロールできたら取り入れたいけど…
+	//スクロール処理を入れる
+	scrollY += 1.0f;
 }
 
 void Stage::Draw()
